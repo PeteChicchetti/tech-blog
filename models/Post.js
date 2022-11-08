@@ -24,7 +24,7 @@ Post.init(
         timestamps: false,
         freezeTableName: false,
         underscored: true,
-        modelName: 'comment',
+        modelName: 'post',
     }
 );
 
