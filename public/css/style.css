@@ -1,0 +1,40 @@
+:root {
+    --dark: #231010;
+    --light: #D9EAD3;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    background-color: var(--light);
+}
+
+header {
+    background-color: var(--dark);
+    padding-left: 40px;
+    height: 125px;
+}
+
+nav {
+    color: var(--light);
+    font-size: 150%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+nav>a {
+    padding-right: 30px;
+}
+
+h1 {
+    display:inline;
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 6px 6px #d9ead380;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 200%;
+}
