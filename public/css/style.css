@@ -72,3 +72,29 @@ h2 {
 .login_criteria {
     padding: 7px;
 }
+
+.form_input {
+    width: 580px;
+    height: 25px;
+    margin: 5px 0px 5px 0px;
+}
+
+.btn_login {
+    width: 587px;
+    height: 30px;
+    margin: 5px 0px 5px 0px;
+    background-color: rgb(97, 92, 92);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    background-color: rgb(71, 68, 68);
+    font-size: 101%;
+}
+
+.login_signup {
+    text-decoration: none;
+}
