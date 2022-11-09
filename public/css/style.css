@@ -1,8 +1,15 @@
+* {
+    font-family: sans-serif;
+}
+
 :root {
     --dark: #231010;
     --light: #D9EAD3;
 }
 
+
+
+/*----- Main Page -----*/
 body {
     display: block;
     margin: 0px;
@@ -20,7 +27,6 @@ nav {
     font-size: 150%;
     padding: 10px 0px 10px 0px;
     margin-bottom: 10px;
-    font-family: sans-serif;
 }
 
 nav>a {
@@ -34,7 +40,35 @@ h1 {
     padding: 5px 15px;
     border-radius: 10px;
     box-shadow: 6px 6px #d9ead380;
-    font-family: sans-serif;
     font-weight: bolder;
     font-size: 200%;
+}
+
+/*----- Login Box -----*/
+.login_wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.login_card {
+    width: 600px;
+    border: 3px solid var(--dark);
+}
+
+.login_header {
+    background-color: var(--dark);
+    color: var(--light);
+    height: 36px;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 4px 4px 4px 10px;
+}
+
+.login_criteria {
+    padding: 7px;
 }
