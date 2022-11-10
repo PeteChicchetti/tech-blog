@@ -7,7 +7,7 @@ const User = require('../models/User');
 
 const commentSeedData = require('./commentSeedData.json');
 const postSeedData = require('./postSeedData.json');
-const userSeedData = require('./userSeedData.json');
+const userSeedData = require('./userSeedData');
 
 // Async function to seed the Database
 const seedDatabase = async () => {
