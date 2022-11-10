@@ -4,6 +4,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
+const routes = require('./controllers');
 
 // Import connection to DB
 const sequelize = require('./config/connection');
@@ -44,7 +45,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('./controllers/'))
+app.use(routes)
 
 // Connect to the database before starting the Express.js server
 sequelize.sync({ force: false }).then(() => {
