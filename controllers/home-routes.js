@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 // Get route for homepage
 router.get('*', async (req, res) => {
- res.render('login')//rendering main twice
+ res.render('signup')//rendering main twice
 
 });
 

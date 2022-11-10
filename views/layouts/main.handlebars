@@ -11,10 +11,16 @@
 <body>
     <header>
         <nav>
+            {{#if loggedin}}
+            <a>Home</a>
+            <a>Dashboard</a>
+            <a>Logout</a>
+            {{else}}
             <a>Home</a>
             <a>Dashboard</a>
             <a>Login</a>
             <a>Logout</a>
+            {{/if}}
         </nav>
             <h1>The Tech Blog</h1>
     </header>
