@@ -31,6 +31,13 @@ nav {
 
 nav>a {
     padding-right: 30px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+nav>a:hover{
+    padding-right: 30px;
+    color: var(--light);
 }
 
 h1 {
@@ -59,9 +66,10 @@ h1 {
 .login_header {
     background-color: var(--dark);
     color: var(--light);
-    height: 36px;
+    height: 50px;
     margin-left: -3px;
     margin-top: -3px;
+    margin-right: -3px;
 }
 
 h2 {
@@ -73,6 +81,10 @@ h2 {
     padding: 7px;
 }
 
+.username, .password {
+    margin-left: 0px;
+}
+
 .form_input {
     width: 580px;
     height: 25px;
@@ -80,7 +92,7 @@ h2 {
 }
 
 .btn_login {
-    width: 587px;
+    width: 580px;
     height: 30px;
     margin: 5px 0px 5px 0px;
     background-color: rgb(97, 92, 92);
