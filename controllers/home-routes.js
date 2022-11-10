@@ -3,8 +3,8 @@ const { Comment, Post, User } = require('../models/');
 const withAuth = require('../utils/auth');
 
 // Get route for homepage
-router.get('/', async (req, res) => {
- res.render('main')//rendering main twice
+router.get('*', async (req, res) => {
+ res.render('signup')//rendering main twice
 
 });
 
