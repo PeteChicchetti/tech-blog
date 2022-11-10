@@ -18,7 +18,7 @@ router.get('/login', withAuth, async (req, res) => {
 });
 
 // Get route for sign up
-router.get('/signup', withAuth, async (req, res) => {
+router.get('/signup', async (req, res) => {
     if (req.session.logged_in) {
         res.redirect('/');
         return;
