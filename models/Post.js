@@ -8,8 +8,9 @@ class Post extends Model {}
 Post.init(
     // Model
     {
-        post_id: {
+        id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
@@ -38,7 +39,7 @@ Post.init(
     {
         sequelize,
         timestamps: false,
-        freezeTableName: false,
+        freezeTableName: true,
         underscored: true,
         modelName: 'post',
     }

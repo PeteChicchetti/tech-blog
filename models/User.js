@@ -14,8 +14,9 @@ class User extends Model {
 User.init(
     // Model
     {
-        user_id: {
+        id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
@@ -32,7 +33,6 @@ User.init(
             },
         },
     },
-    
     // DataTypes
     {
         // Hooks
@@ -50,7 +50,7 @@ User.init(
         },
         sequelize,
         timestamps: false,
-        freezeTableName: false,
+        freezeTableName: true,
         underscored: true,
         modelName: 'user',
     }
