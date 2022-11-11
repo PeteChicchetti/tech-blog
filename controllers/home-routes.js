@@ -3,8 +3,22 @@ const { Comment, Post, User } = require('../models/');
 const withAuth = require('../utils/auth');
 
 // Get route for homepage
-router.get('*', async (req, res) => {
- res.render('login')
+router.get('/', async (req, res) => {
+    res.render('./signup')
+  // try {
+  //   const posts = await Post.findAll({
+  //     include: [{
+  //       model: User
+  //     }],
+  //   });
+  //   // const postContent = posts.map((post) => Post.get({ plain: true }));
+  //   //   res.render('all-posts', {
+  //   //     posts,
+  //   //     logged_in: req.session.logged_in
+  //   //   });
+  // } catch(err) {
+  //   res.status(500).json(err);
+  // }
 
 });
 
@@ -14,18 +28,14 @@ router.get('/post/:id', withAuth, async (req, res) => {
 });
 
 // Get route for login
-router.get('/login', withAuth, async (req, res) => {
-
+router.get('/login', async (req, res) => {
+  if(req.session.loggedin) {
+    res.redirect('/');
+    return;
+  } else {
+    res.render('./login');
+  }
 });
 
-// Get route for sign up
-router.get('/signup', async (req, res) => {
-    // if (req.session.logged_in) {
-    //     res.redirect('/');
-    //     return;
-    //   }
-    
-      res.render('signup');
-});
 
 module.exports = router;
