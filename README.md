@@ -6,6 +6,8 @@ This site allows developers to publish their blog posts and comment on other dev
 
 Deployed link: https://safe-eyrie-69744.herokuapp.com/
 
+![image of tech blog login screen](./assets/images/tech-blog-login.png)
+
 This application uses express, handlebars, sessions, sequelize, session-sequelize, mysql and bcrypt to creat a blog website that allows a user to sign up, log in and post data to a page.
           
 ## Table of Contents
