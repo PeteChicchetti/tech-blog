@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 // Get route for homepage
 router.get('/', async (req, res) => {
-    res.render('./signup')
+    res.render('all-posts')
   // try {
   //   const posts = await Post.findAll({
   //     include: [{
@@ -26,6 +26,10 @@ router.get('/', async (req, res) => {
 router.get('/post/:id', withAuth, async (req, res) => {
 
 });
+
+router.get('/signup', async (req, res) => {
+  res.render('signup')
+})
 
 // Get route for login
 router.get('/login', async (req, res) => {
